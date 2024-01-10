@@ -82,4 +82,24 @@ def run(program):
 
 
 # main program
-clear()
+while True:
+    clear()
+    for line in open("ascii-art.txt", "r"):
+        print(line)
+    manu_choice_1 = str(input("""Choose one of these options:
+    [1] msf payload generator
+    [2] nmap helper
+    [3] arp discover tool
+    [4] red hawk
+    [5] sqlmap
+    [6] setoolkit
+    [7] socialphish
+    [8] subfinder
+    [9] wireshark
+    [10] Brutal
+    [11] venom
+    [12] slowloris
+    [13] xsscon
+    [14] Exit
+    
+    > """))
