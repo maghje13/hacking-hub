@@ -1,4 +1,5 @@
 import os
+import sys
 
 
 program_list = ["msf-payload-generator", "nmap-helper", "arp-discover", "RED_HAWK", "sqlmap", "setoolkit", "socialphish"
@@ -86,7 +87,7 @@ while True:
     clear()
     for line in open("ascii-art.txt", "r"):
         print(line)
-    manu_choice_1 = str(input("""Choose one of these options:
+    menu_choice_0 = str(input("""Choose one of these options:
     [1] msf payload generator
     [2] nmap helper
     [3] arp discover tool
@@ -103,3 +104,57 @@ while True:
     [14] Exit
     
     > """))
+    if menu_choice_0 == "":
+        pass
+    elif manu_choice_0 == "14":
+        sys.exit()
+    elif menu_choice_0 == "1":
+        while True:
+            clear()
+            print("msf payload generator is a program created by me (maghje13)!\nit uses metasploit-framework's "
+                  "msfvenom command to create a backdoor payload, and can create a listener\n "
+                  "source: https://github.com/maghje13/payload-generator\n")
+            menu_choice_1 = str(input("""Options:
+[1] Install
+[2] Run
+[3] Exit
+
+> """))
+            if menu_choice_1 == "1":
+                install("msf-payload-generator")
+            elif menu_choice_1 == "2":
+                run("msf-payload-generator")
+            elif menu_choice_1 == "3":
+                break
+            else:
+                pass
+    elif menu_choice_0 == "3":
+        while True:
+            clear()
+            print("arp discover tool is a tool created by me (maghje13)!\n"
+                  "it uses the \"arp -a\" command to show all devices it can find on your network\n")
+            menu_choice_3 = str(input("""Options:
+[1] Run
+[2] Exit"""))
+            if menu_choice_3 == "1":
+                run("arp-discover")
+            elif menu_choice_3 == "2":
+                break
+            else:
+                pass
+    elif menu_choice_0 == "4":
+        while True:
+            clear()
+            print("Redhawk is a very good recon tool for scanning websites and finding vulnerabilities")
+            menu_choice_4 = str(input("""Options:
+        [1] Install
+        [2] Run
+        [3] Exit"""))
+            if manu_choice == "1":
+                install("RED_HAWK")
+            elif menu_choice_4 == "2":
+                run("RED_HAWK")
+            elif menu_choice_4 == "3":
+                break
+            else:
+                pass
