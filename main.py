@@ -106,7 +106,7 @@ while True:
     > """))
     if menu_choice_0 == "":
         pass
-    elif manu_choice_0 == "14":
+    elif menu_choice_0 == "14":
         sys.exit()
     elif menu_choice_0 == "1":
         while True:
@@ -150,7 +150,7 @@ while True:
         [1] Install
         [2] Run
         [3] Exit"""))
-            if manu_choice == "1":
+            if menu_choice == "1":
                 install("RED_HAWK")
             elif menu_choice_4 == "2":
                 run("RED_HAWK")
