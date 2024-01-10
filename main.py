@@ -87,7 +87,7 @@ while True:
     clear()
     for line in open("ascii-art.txt", "r"):
         print(line)
-    menu_choice_0 = str(input("""Choose one of these options:
+    menu_choice_1 = str(input("""Choose one of these options:
     [1] msf payload generator
     [2] nmap helper
     [3] arp discover tool
@@ -104,11 +104,11 @@ while True:
     [14] Exit
     
     > """))
-    if menu_choice_0 == "":
+    if menu_choice_1 == "":
         pass
-    elif menu_choice_0 == "14":
+    elif menu_choice_1 == "14":
         sys.exit()
-    elif menu_choice_0 == "1":
+    elif menu_choice_1 == "1":
         while True:
             clear()
             print("msf payload generator is a program created by me (maghje13)!\nit uses metasploit-framework's "
@@ -128,33 +128,33 @@ while True:
                 break
             else:
                 pass
-    elif menu_choice_0 == "3":
+    elif menu_choice_1 == "3":
         while True:
             clear()
             print("arp discover tool is a tool created by me (maghje13)!\n"
                   "it uses the \"arp -a\" command to show all devices it can find on your network\n")
-            menu_choice_3 = str(input("""Options:
+            menu_choice_2 = str(input("""Options:
 [1] Run
 [2] Exit"""))
-            if menu_choice_3 == "1":
+            if menu_choice_2 == "1":
                 run("arp-discover")
-            elif menu_choice_3 == "2":
+            elif menu_choice_2 == "2":
                 break
             else:
                 pass
-    elif menu_choice_0 == "4":
+    elif menu_choice_1 == "4":
         while True:
             clear()
             print("Redhawk is a very good recon tool for scanning websites and finding vulnerabilities")
-            menu_choice_4 = str(input("""Options:
+            menu_choice_2 = str(input("""Options:
         [1] Install
         [2] Run
         [3] Exit"""))
-            if menu_choice == "1":
+            if menu_choice_2 == "1":
                 install("RED_HAWK")
-            elif menu_choice_4 == "2":
+            elif menu_choice_2 == "2":
                 run("RED_HAWK")
-            elif menu_choice_4 == "3":
+            elif menu_choice_2 == "3":
                 break
             else:
                 pass
