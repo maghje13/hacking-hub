@@ -107,7 +107,7 @@ def run(program):
     elif program == "setoolkit":
         os.system("sudo setoolkit")
     elif program == "socialphish":
-        os.system("cd programs/socialphish && sudo bash socialphish.sh")
+        os.system("cd programs/SocialPhish && sudo bash socialphish.sh")
     elif program == "subfinder":
         sublist3r_option = str(input("Site to scan (e.g. example.com):"))
         os.system(f"sudo subfinder -d {sublist3r_option}")
