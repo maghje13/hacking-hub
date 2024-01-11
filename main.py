@@ -6,6 +6,14 @@ program_list = ["msf-payload-generator", "nmap-helper", "arp-discover", "RED_HAW
                 "subfinder", "wireshark", "brutal", "venom", "slowloris", "xsscon"]
 
 
+def pause():
+    input("\npress enter to continue...")
+
+
+def clear():
+    os.system("clear")
+
+
 def show_description(program):
     if program == "msf-payload-generator":
         print("msf payload generator is a program created by me (maghje13)!\n"
@@ -21,10 +29,6 @@ def show_description(program):
               "it does \"arp -a\" which shows all devices (and their mac addresses) it could find on your networks")
     elif program == "RED_HAWK":
         print("Redhawk is an advanced website recon and vulnerability scanner\n")
-
-
-def clear():
-    os.system("clear")
 
 
 def show_options(program):
@@ -86,6 +90,7 @@ def install(program):
     elif program == "xsscon":
         os.system("pip install bs4 requests")
         os.system("cd programs && git clone https://github.com/menkrep1337/XSSCon && chmod 755 -R XSSCon")
+    pause()
 
 
 def run(program):
@@ -122,6 +127,7 @@ def run(program):
     elif program == "xsscon":
         xsscon_option = str(input("Domain: "))
         os.system(f"cd programs/XSSCon && python3 xsscon.py -u {xsscon_option}")
+    pause()
 
 
 # main program
