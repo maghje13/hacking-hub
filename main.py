@@ -61,7 +61,7 @@ def install(program):
         print("nothing to install for this...")
     elif program == "RED_HAWK":
         os.system("sudo apt install php")
-        os.system("cd programs && git clone git clone https://github.com/Tuhinshubhra/RED_HAWK.git")
+        os.system("cd programs && git clone https://github.com/Tuhinshubhra/RED_HAWK.git")
     elif program == "sqlmap":
         os.system("sudo apt install sqlmap")
     elif program == "setoolkit":
@@ -100,7 +100,7 @@ def run(program):
     elif program == "arp-discover":
         os.system("arp -a")
     elif program == "RED_HAWK":
-        os.system("cd programs/red_hawk && php rhawk.php")
+        os.system("cd programs/RED_HAWK && php rhawk.php")
     elif program == "sqlmap":
         sqlmap_option = str(input("Site to scan (with http/https): "))
         os.system(f"sudo sqlmap -u {sqlmap_option}")
