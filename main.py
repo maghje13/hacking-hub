@@ -105,7 +105,7 @@ def run(program):
         sqlmap_option = str(input("Site to scan (with http/https): "))
         os.system(f"sudo sqlmap -u {sqlmap_option}")
     elif program == "setoolkit":
-        os.system("cd programs/setoolkit && sudo setoolkit")
+        os.system("sudo setoolkit")
     elif program == "socialphish":
         os.system("cd programs/socialphish && sudo bash socialphish.sh")
     elif program == "subfinder":
