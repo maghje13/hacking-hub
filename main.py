@@ -59,7 +59,6 @@ def install(program):
         os.system("cd programs/nmap-helper && bash install.sh")
     elif program == "arp-discover":
         print("nothing to install for this...")
-        input("press enter to continue...")
     elif program == "RED_HAWK":
         os.system("sudo apt install php")
         os.system("cd programs && git clone git clone https://github.com/Tuhinshubhra/RED_HAWK.git")
@@ -100,7 +99,6 @@ def run(program):
         os.system("cd programs/nmap-helper && python3 main.py")
     elif program == "arp-discover":
         os.system("arp -a")
-        input("press enter to continue")
     elif program == "RED_HAWK":
         os.system("cd programs/red_hawk && php rhawk.php")
     elif program == "sqlmap":
